@@ -157,7 +157,8 @@ $root@server:~/laravel/laradock/nginx# docker-compose up -d nginx mysql
 
 ## Run Site on SSL with Let's Encrypt Certificate
 
-**Note: You need to Use Caddy here Instead of Nginx**
+**Note: You need to Use 
+here Instead of Nginx**
 
 To go Caddy Folders and Edit CaddyFile
 
@@ -197,7 +198,7 @@ This is needed Prior to Creating Let's Encypt
 ## Run Your Caddy Container without the -d flag and Generate SSL with Let's Encrypt
 
 ```
-$root@server:~/laravel/laradock/caddy# docker-compose up  caddy
+$root@server:~/laravel/laradock# docker-compose up  caddy
 ```
 
 You'll be prompt here to enter your email... you may enter it or not
@@ -218,8 +219,8 @@ After it finishes, press `Ctrl` + `C` to exit.
 ## Stop All Containers and ReRun Caddy and Other Containers on Background
 
 ```
-$root@server:~/laravel/laradock/caddy# docker-compose down
-$root@server:~/laravel/laradock/caddy# docker-compose up -d mysql caddy
+$root@server:~/laravel/laradock# docker-compose down
+$root@server:~/laravel/laradock# docker-compose up -d mysql caddy
 ```
 
 View your Site in the Browser Securely Using HTTPS (https://yourdomain.com)
